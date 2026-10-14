@@ -25,7 +25,6 @@ const defaultData = { messages: [] };
 const adapter = new JSONFile('db.json');
 const db = new Low(adapter, defaultData);
 
-
 //Serve static files from a public folder
 app.use(express.static('public'));
 
@@ -50,7 +49,6 @@ app.get('/messages', (request, response) => {
       //send the messages to the client
       response.json(theData);
     });
-
 });
 
 //A route to listen for data

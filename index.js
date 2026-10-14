@@ -70,5 +70,3 @@ app.post('/newMessage', (request, response) => {
       response.json({ 'msg': 'Success' });
     });
 });
-
-console.log("Hello?");
